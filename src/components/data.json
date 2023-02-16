@@ -1,0 +1,6 @@
+[
+    {"id": 1, "name": "Clavo", "medida": 20, "unidades": 50},
+    {"id": 2, "name": "Tornillo", "medida": 30, "unidades": 80},
+    {"id": 3, "name": "Tuerca", "medida": 10, "unidades": 40},
+    {"id": 4, "name": "Pinza", "medida": "Mediana","unidades": 1}
+]
