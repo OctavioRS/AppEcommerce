@@ -12,10 +12,12 @@ useEffect(() => {
     try {
     const resp = await fetch ('/data.json')
     const data = await resp.json()
-    setProducts (data)
+    setTimeout(() => {
+      setProducts(data);
+    }, 2000)
   }
-    catch {
-      
+    catch (error) {
+      console.log('Error al obtener el producto: ', error);
     }
   }
     traerProductos()

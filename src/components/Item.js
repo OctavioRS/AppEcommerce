@@ -1,4 +1,5 @@
 import React from 'react'
+import "./item.css"
 
 
 const Item = ({ prod })=> {
@@ -6,14 +7,10 @@ const Item = ({ prod })=> {
 
   return (
 
-    <div>
-       <h2>
-        {prod.name} 
+    <div className='card'>
+       <h2> {prod.name}  </h2>
         <img src={prod.img} alt={prod.name} />
-       
-       </h2>
-       
-       
+      
     </div>
   )
 }
