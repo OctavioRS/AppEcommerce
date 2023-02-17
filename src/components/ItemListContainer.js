@@ -3,13 +3,14 @@ import "./main.css"
 import ItemList from "./ItemList";
 import { useState , useEffect } from "react";
 
-const ItemListContainer = ({greeting}) => {
+
+const ItemListContainer = ({ greeting }) => {
 const [products , setProducts] = useState([])
 
 useEffect(() => {
   const traerProductos = async ()=>{
     try {
-    const resp = await fetch ('./data.json')
+    const resp = await fetch ('/data.json')
     const data = await resp.json()
     setProducts (data)
   }
@@ -21,12 +22,6 @@ useEffect(() => {
   },[])
 
 
-
-
-
-
-
-
     return (
       <>
         <div className="greeting">
@@ -34,6 +29,7 @@ useEffect(() => {
         </div>
       
         <ItemList products={products}/>
+       
        </>
     )
 }

@@ -1,0 +1,6 @@
+[
+    {"id": 1, "name": "Clavo", "medida": 20, "unidades": 50 , "precio": 70 , "img":"images/Clavo.jpeg"},
+    {"id": 2, "name": "Tornillo", "medida": 30, "unidades": 80, "precio": 50 ,  "img":"images/Tornillo.jpeg"},
+    {"id": 3, "name": "Tuerca", "medida": 10, "unidades": 40, "precio": 100 ,  "img":"images/Tuerca.jpeg"},
+    {"id": 4, "name": "Arandela", "medida": "Mediana","unidades": 1, "precio": 70 ,  "img":"images/Arandela.jpeg"}
+]
