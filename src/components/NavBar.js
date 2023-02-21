@@ -1,17 +1,17 @@
 import React from "react";
 import "./Nav.css"
 import CartWidget from "./CartWidget"
+import NavCategories from "./NavCategories";
+import { Link } from "react-router-dom"
 
 
 const NavBar = () => {
     return (
        <nav>
-        <h1 className="logo">Ferreteria LA TUERCA </h1> 
+        <Link className="logo" to={"/"}>Ferreteria LA TUERCA </Link> 
         <div className="anchors">
-          <a href="#"> INICIO</a>
-          <a href="#"> PRODUCTOS</a>
-          <a href="#"> CONTACTO </a>
-          <CartWidget/>
+         <NavCategories/>
+        <Link to={"/Cart"}> <CartWidget/> </Link> 
         </div>
        </nav> 
     )

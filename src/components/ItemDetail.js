@@ -1,17 +1,22 @@
 import React from 'react'
+import './ItemDetail.css'
 
 const ItemDetail = ({ producto }) => {
-  const productos = producto.find(producto => producto.id === Number(1))
-
   return (
-    <div>
-      <h2>{productos.name}</h2>
-      <p>Medida: {productos.medida}</p>
-      <p>Unidades: {productos.unidades}</p>
-      <p>Precio: {productos.precio}</p>
-      <img src={productos.img} alt={productos.name} />
-    </div>
-  )
-}
-
+    <>
+      {producto && (
+        <>
+        <div className='detail'>
+          <h2>Detalle de: {producto.name}</h2>
+          <p>Descripcion: {producto.descripcion}</p>
+          <p>Medida: {producto.medida}</p>
+          <p>Unidades: {producto.unidades}</p>
+          <p>Precio: {producto.precio}</p>
+          <img src={producto.img} alt={producto.name} />
+        </div>
+        </>
+      )}
+    </>
+  );
+};
 export default ItemDetail
