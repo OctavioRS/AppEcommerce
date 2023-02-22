@@ -3,8 +3,7 @@ import './ItemDetail.css'
 
 const ItemDetail = ({ producto }) => {
   return (
-    <>
-      {producto && (
+   
         <>
         <div className='detail'>
           <h2>Detalle de: {producto.name}</h2>
@@ -15,8 +14,8 @@ const ItemDetail = ({ producto }) => {
           <img src={producto.img} alt={producto.name} />
         </div>
         </>
-      )}
-    </>
+      
+  
   );
 };
 export default ItemDetail

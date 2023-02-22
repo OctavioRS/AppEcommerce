@@ -2,5 +2,7 @@
     {"id": 1, "name": "Clavo", "descripcion": "Clavo de acero ideal para paredes duras", "medida": 20, "unidades": 50 , "precio": 70 , "img":"images/Clavo.jpeg" , "categoria": "madera"},
     {"id": 2, "name": "Tornillo","descripcion": "Tornillo para madera autoperforante", "medida": 30, "unidades": 80, "precio": 50 ,  "img":"images/Tornillo.jpeg", "categoria": "madera"},
     {"id": 3, "name": "Tuerca", "descripcion": "Tuerca de acero inoxiadble con rosca interna", "medida": 10, "unidades": 40, "precio": 100 ,  "img":"images/Tuerca.jpeg", "categoria": "metal"},
-    {"id": 4, "name": "Arandela", "descripcion": "Arandela de acero con base lisa", "medida": "Mediana","unidades": 1, "precio": 70 ,  "img":"images/Arandela.jpeg", "categoria": "metal"}
+    {"id": 4, "name": "Arandela", "descripcion": "Arandela de acero con base lisa", "medida": "Mediana","unidades": 1, "precio": 70 ,  "img":"images/Arandela.jpeg", "categoria": "metal" },
+    {"id": 5, "name": "Brocha", "descripcion": "Brocha de pelo corto para paredes de interior", "medida": "Mediana","unidades": 5, "precio": 45 ,  "img":"images/Brocha.jpg", "categoria": "pintura"},
+    {"id": 6, "name": "Lija", "descripcion": "Lija poco porosa pero resistente", "medida": "120","unidades": 17, "precio": 60 ,  "img":"images/Lija.jpg", "categoria": "pintura"}
 ]
