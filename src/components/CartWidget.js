@@ -6,7 +6,11 @@ const CartWidget = () => {
     return (
             <>
             <ShoppingCartIcon /> 
-            <span id="numeroCarrito">  3  </span>
+            <span id="numeroCarrito">  
+            
+            3
+            
+            </span>
        </>
     )
 }
