@@ -11,3 +11,12 @@
 .boton-eliminar{
     cursor: pointer;
 }
+
+.aca{
+    color: rgb(7, 7, 117);
+    margin-left: 5px;
+}
+
+.formatoCarrito{
+    width: 500px;
+}
