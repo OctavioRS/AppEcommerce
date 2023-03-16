@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 import "./ProductosCart.css";
@@ -9,14 +9,30 @@ import Form from "./Form";
 
 const Cart = () => {
   const { cart, removeItem, TotalPrice } = useContext(CartContext);
+  const [sellId, setSellId] = useState("")
+
+  const clientData = (data) => {
+    return( {
+      nombre: data.nombre,
+      apellido: data.apellido,
+      email: data.email
+    })
+   
+  }
+
   const lastStep = () => {
     const sellCollection = collection(db, "sells");
     addDoc(sellCollection, {
+      datos: clientData(),
       items: cart,
       total: TotalPrice(),
       time: serverTimestamp(),
-    });
+    })
+    .then ((result) => {const resultID = result.id 
+    setSellId(resultID);})
   };
+
+  
 
   return (
     <>
@@ -46,9 +62,12 @@ const Cart = () => {
               );
             })}
             <p> Precio total: ${TotalPrice()} </p>
-            <button onClick={lastStep}> Comprar </button>
+            
           </div>
-          <Form />
+          <Form data={clientData}/>
+        <button onClick={lastStep}> Comprar </button>
+        {sellId && <p>Su id de compra es {sellId}</p>}
+          
         </>
       )}
     </>
