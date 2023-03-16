@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-const Form = ( { data }) => {
+const Form = ( { lastStep }) => {
 
   const [email, setEmail] = useState("")
   const [nombre, setNombre] = useState("")
@@ -30,7 +30,7 @@ const Form = ( { data }) => {
       apellido: apellido,
       email: email
      }
-     data(userData)
+     lastStep(userData)
      
   }
 
@@ -38,12 +38,12 @@ const Form = ( { data }) => {
     <div>
         <p>Completa tus datos para finalizar la compra</p>
       <form onSubmit={ sendData }>
-        <label htmlFor="nombre" value={ nombre } onChange={ changeName } >Nombre</label>
-        <input type="text" name="nombre" />
-        <label htmlFor="apellido" value={ apellido } onChange={ changeApellido }>Apellido</label>
-        <input type="text" name="apellido" />
-        <label htmlFor="email" value={ email } onChange={ changeEmail }>Correo electrónico</label>
-        <input type="email" name="email" />
+        <label htmlFor="nombre" value={ nombre }  >Nombre</label>
+        <input type="text" name="nombre" onChange={ changeName }/>
+        <label htmlFor="apellido" value={ apellido } >Apellido</label>
+        <input type="text" name="apellido" onChange={ changeApellido }/>
+        <label htmlFor="email" value={ email } >Correo electrónico</label>
+        <input type="email" name="email" onChange={ changeEmail }/>
         <label htmlFor="email">Repetir correo electrónico</label>
         <input type="email" name="email2"  />
         <input type="submit" value="confirmar" />

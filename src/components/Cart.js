@@ -11,19 +11,12 @@ const Cart = () => {
   const { cart, removeItem, TotalPrice } = useContext(CartContext);
   const [sellId, setSellId] = useState("")
 
-  const clientData = (data) => {
-    return( {
-      nombre: data.nombre,
-      apellido: data.apellido,
-      email: data.email
-    })
-   
-  }
 
-  const lastStep = () => {
+
+  const lastStep = (data) => {
     const sellCollection = collection(db, "sells");
     addDoc(sellCollection, {
-      datos: clientData(),
+      datos: data,
       items: cart,
       total: TotalPrice(),
       time: serverTimestamp(),
@@ -64,7 +57,7 @@ const Cart = () => {
             <p> Precio total: ${TotalPrice()} </p>
             
           </div>
-          <Form data={clientData}/>
+          <Form lastStep={lastStep}/>
         <button onClick={lastStep}> Comprar </button>
         {sellId && <p>Su id de compra es {sellId}</p>}
           
