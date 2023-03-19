@@ -28,7 +28,7 @@ const ItemDetail = ({ producto }) => {
           <button> Finalizar compra </button>
         </Link>
       ) : (
-        <ItemCount onAdd={onAdd} stock={5} />
+        <ItemCount onAdd={onAdd} stock={producto.unidades} />
       )}
     </>
   );

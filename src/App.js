@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CartProvider from "./context/CartContext";
 
 
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -28,7 +30,7 @@ function App() {
           />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
           <Route path="/Cart" element={<Cart />} />
-          
+         
         </Routes>
       </CartProvider>
     </BrowserRouter>
