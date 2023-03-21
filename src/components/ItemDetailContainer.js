@@ -21,7 +21,6 @@ const ItemDetailContainer = () => {
   }, [id]);
   return (
     <>
-      
       {producto ? (
         <ItemDetail producto={producto} />
       ) : (

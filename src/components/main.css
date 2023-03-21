@@ -1,5 +1,9 @@
 .greeting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     font-size: 50px;
     font-family: Verdana;
-    color: rgb(167, 31, 31)
+    color: #7e2b2b;
 }

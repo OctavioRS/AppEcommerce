@@ -1,22 +1,159 @@
+.formatoCarrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #7e2b2b;
+    width: 600px;
+    margin: 20px auto;
+    background-color: #ccc ;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.formatoCarrito p {
+    font-family: 'Righteous';
+    color: rgb(7, 7, 117);
+    font-size: 30px;
+}
+
 .productos{
-    border: 1px solid black;
+    font-family: 'Righteous';
+    color: rgb(7, 7, 117);
+    border: 3px solid rgb(7, 7, 117);
+    border-radius: 5px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
     margin-left: 20px;
+    word-spacing: 17px;
 }
 
 .boton-eliminar{
+    margin-left: 20px;
     cursor: pointer;
 }
 
 .aca{
-    color: rgb(7, 7, 117);
+    font-family: 'Righteous';
+    color: #7e2b2b;
     margin-left: 5px;
 }
 
-.formatoCarrito{
-    width: 500px;
+
+.sinProductos{
+    font-family: 'Righteous';
+    color: rgb(7, 7, 117);
+}
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #7e2b2b;
+    width: 600px;
+    margin: 20px auto;
+    background-color: #ccc;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .formulario p {
+    font-family: 'Righteous';
+    color: rgb(7, 7, 117);
+  }
+  
+  .formulario label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .formulario input[type="text"],
+  .formulario input[type="email"],
+  .formulario input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: none;
+    background-color: #eee;
+    box-sizing: border-box;
+  }
+  
+  .formulario input[type="submit"] {
+    background-color: #7e2b2b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .formulario input[type="submit"]:hover {
+    background-color: #5a1f1f;
+  }
+
+  .formulario button{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid  rgb(7, 7, 117);
+    background-color: rgb(233, 224, 224);
+    color:rgb(167, 31, 31);
+    font-family: 'Righteous';
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px auto;
+  }
+
+.finalizar-compra{
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid  rgb(7, 7, 117);
+    background-color: rgb(192, 114, 114);
+    color:rgb(7, 7, 117);
+    font-family: 'Righteous';
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px auto;
+}
+  
+.brief{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #7e2b2b;
+    width: 600px;
+    margin: 20px auto;
+    background-color: #ccc ;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Righteous';
+    color: rgb(7, 7, 117);
+}
+
+.brief h1{
+    color: #7e2b2b;
+}
+
+.datos-confirmados{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

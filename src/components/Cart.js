@@ -57,11 +57,11 @@ const Cart = () => {
   return (
     <>
       {cart.length === 0 ? (
-        <p>
+        <p className="sinProductos">
           {" "}
           No hay productos en el carrito. Elija sus productos
           <Link to="/" className="aca">
-            presionando aquí
+            presionando aquí.
           </Link>
         </p>
       ) : (
@@ -72,7 +72,7 @@ const Cart = () => {
                 {cart.map((prod) => {
                   return (
                     <h2 key={prod.id} className="productos">
-                      {prod.quantity} {prod.name} $:{prod.quantity * prod.precio}
+                      {prod.quantity} {prod.name} ${prod.precio}
                       <span
                         className="boton-eliminar"
                         onClick={() => removeItem(prod.id)}
@@ -85,7 +85,7 @@ const Cart = () => {
                 <p> Precio total: ${TotalPrice()} </p>
               </div>
               <Form onConfirm={handleConfirm} />
-              <button onClick={handleFinalizarCompra}>Finalizar compra</button>
+              <button onClick={handleFinalizarCompra} className="finalizar-compra">Finalizar compra</button>
             </>
           )}
           {isSubmitted && showBrief && (

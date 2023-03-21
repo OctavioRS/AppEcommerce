@@ -20,7 +20,7 @@ nav{
     color: rgb(233, 238, 241);
     display: flex;
     align-items: center;
-    
+    font-family: 'Righteous';
 }
 
 
@@ -28,13 +28,13 @@ a{
     color: rgb(233, 238, 241);
     text-decoration: none;
     cursor: pointer;
-    margin: 10px;
+    margin: 20px;
 }
 
 #numeroCarrito{
     color: rgb(233, 238, 241);
     background-color:  rgb(167, 31, 31);
-    border-radius: 25px;
-    width: 15px;
+    border-radius: 20px;
+    width: 20px;
     text-align: center;
 }

@@ -33,13 +33,19 @@ const ItemListContainer = ({ greeting }) => {
 
   return (
     <>
-      <div className="greeting">
-        <p>{greeting}</p>
-      </div>
-
-      <ItemList products={products} />
+      {products.length > 0 ? (
+        <>
+        <div className="greeting">
+          <p>{greeting}</p>
+        </div>
+        <ItemList products={products} />
+        </>
+      ) : (
+        <h1>Cargando ...</h1>
+      )}
     </>
   );
+  
 };
 
 export default ItemListContainer;

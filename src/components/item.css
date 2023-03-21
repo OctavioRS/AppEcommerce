@@ -2,30 +2,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: auto 50px;
   }
   
   .card {
     color: rgb(7, 7, 117);
     text-align: center;
     width: 200px;
-    background-color: ;
-    margin-bottom: 20px;
-    border: 3px solid #ccc;
+    margin: 10px 60px;
+    border: 3px solid #7e2b2b;
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .card p {
+    font-size: 18px; 
+    font-weight: 700;
   }
   
   .card img {
     width: 100%;
     height: 200px;
-    
     border-radius: 5px 5px 0 0;
-  }
-
-  .card p{
-    font-weight: 700;
   }
 
   .botonDetalle{
     color: rgb(7, 7, 117);
+    margin: 5px 0;
   }

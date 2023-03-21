@@ -14,18 +14,20 @@ const ItemDetail = ({ producto }) => {
   };
   return (
     <>
-      <div className="detail">
-        <h2>Detalle de: {producto.name}</h2>
-        <p>Descripcion: {producto.descripcion}</p>
-        <p>Medida: {producto.medida}</p>
-        <p>Unidades: {producto.unidades}</p>
-        <p>Precio: {producto.precio}</p>
+      <div className="content-detail">
         <img src={producto.img} alt={producto.name} />
+        <div className="detail">
+          <h2>{producto.name}</h2>
+          <p> <u>Descripcion:</u> {producto.descripcion}</p>
+          <p>Medida: {producto.medida}</p>
+          <p>Unidades: {producto.unidades}</p>
+          <p>Precio: $ {producto.precio}</p>
+        </div>
+        
       </div>
-
       {BotonPresionado ? (
         <Link to="/Cart">
-          <button> Finalizar compra </button>
+          <button className="ir-al-carrito"> Ir al carrito </button>
         </Link>
       ) : (
         <ItemCount onAdd={onAdd} stock={producto.unidades} />
