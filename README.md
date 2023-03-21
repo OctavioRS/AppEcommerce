@@ -1,8 +1,8 @@
 #Proyecto React 2023
 
-## E-commerce de Ferretería LA TUERCA
+##E-commerce de Ferretería LA TUERCA
 
-### Creado por Octavio Ruiz Scolaris
+###Creado por Octavio Ruiz Scolaris
 
 Este proyecto es un e-commerce de una ferretería ficticia llamada "La Tuerca", construido con React. Además, se utilizó la librería de Material UI para el diseño del carrito de compras.
 
