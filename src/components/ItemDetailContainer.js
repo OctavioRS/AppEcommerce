@@ -21,11 +21,7 @@ const ItemDetailContainer = () => {
   }, [id]);
   return (
     <>
-      {producto ? (
-        <ItemDetail producto={producto} />
-      ) : (
-        <h1>Cargando ... </h1>
-      )}
+      {producto ? <ItemDetail producto={producto} /> : <h1>Cargando ... </h1>}
     </>
   );
 };

@@ -48,6 +48,7 @@
     font-family: 'Righteous';
     color: rgb(7, 7, 117);
 }
+
 .formulario {
     display: flex;
     justify-content: center;
@@ -62,21 +63,21 @@
     border-radius: 5px;
   }
   
-  .formulario p {
+.formulario p {
     font-family: 'Righteous';
     color: rgb(7, 7, 117);
   }
   
-  .formulario label {
+.formulario label {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 5px;
     color: #333;
   }
   
-  .formulario input[type="text"],
-  .formulario input[type="email"],
-  .formulario input[type="tel"] {
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -86,7 +87,7 @@
     box-sizing: border-box;
   }
   
-  .formulario input[type="submit"] {
+.formulario input[type="submit"] {
     background-color: #7e2b2b;
     color: #fff;
     border: none;
@@ -96,11 +97,11 @@
     cursor: pointer;
   }
   
-  .formulario input[type="submit"]:hover {
+.formulario input[type="submit"]:hover {
     background-color: #5a1f1f;
   }
 
-  .formulario button{
+.formulario button{
     height: 30px;
     display: flex;
     justify-content: center;

@@ -44,7 +44,7 @@ const Form = ({ onConfirm }) => {
         email: email,
       };
       onConfirm(userData);
-      setConfirmado(true); 
+      setConfirmado(true);
     }
   };
 
@@ -73,14 +73,14 @@ const Form = ({ onConfirm }) => {
         </label>
         <input type="email" name="email2" onBlur={repeatEmail} />
         {error && <p>{error}</p>}
-        {confirmado ? ( 
+        {confirmado ? (
           <>
-          <div className="datos-confirmados">
-          <span role="img" aria-label="confirmado">
-            &#9989;
-          </span>
-          <p> Sus datos fueron cargados correctamente</p>
-          </div>
+            <div className="datos-confirmados">
+              <span role="img" aria-label="confirmado">
+                &#9989;
+              </span>
+              <p> Sus datos fueron cargados correctamente</p>
+            </div>
           </>
         ) : (
           <button type="submit">Confirmar</button>

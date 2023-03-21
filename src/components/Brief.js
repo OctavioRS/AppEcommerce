@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import "./ProductosCart.css";
 
 const Brief = ({ dataShop, dataPrice, id }) => {
   return (
-    <div className='brief'>
+    <div className="brief">
       <h1>Tu compra fue realizada con éxito!</h1>
       <div>
-       <u>Los detalles de tu compra son:</u> 
+        <u>Los detalles de tu compra son:</u>
         <ul>
           {dataShop.map((item) => (
             <li key={item.id}>

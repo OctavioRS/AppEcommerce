@@ -16,7 +16,7 @@ import Brief from "./Brief";
 const Cart = () => {
   const { cart, removeItem, TotalPrice } = useContext(CartContext);
   const [sellId, setSellId] = useState("");
-  const [isSubmitted, setIsSubmitted] = useState(false); 
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [showBrief, setShowBrief] = useState(false);
   const [userData, setUserData] = useState(null);
 
@@ -30,8 +30,8 @@ const Cart = () => {
     }).then((result) => {
       const resultID = result.id;
       setSellId(resultID);
-      handlerStock()
-      setIsSubmitted(true); 
+      handlerStock();
+      setIsSubmitted(true);
     });
   };
 
@@ -85,17 +85,21 @@ const Cart = () => {
                 <p> Precio total: ${TotalPrice()} </p>
               </div>
               <Form onConfirm={handleConfirm} />
-              <button onClick={handleFinalizarCompra} className="finalizar-compra">Finalizar compra</button>
+              <button
+                onClick={handleFinalizarCompra}
+                className="finalizar-compra"
+              >
+                Finalizar compra
+              </button>
             </>
           )}
           {isSubmitted && showBrief && (
             <Brief dataShop={cart} dataPrice={TotalPrice()} id={sellId} />
-
           )}
         </>
       )}
     </>
   );
-          }
+};
 
-          export default Cart;
+export default Cart;

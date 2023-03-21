@@ -33,12 +33,11 @@ function ItemCount({ stock, onAdd }) {
           <span id="aumentar" onClick={aumentarStock}>
             +
           </span>
-        </div> 
+        </div>
         <button className="botonAgregar" onClick={agregarCarrito}>
-        Agregar al carrito
-      </button>
+          Agregar al carrito
+        </button>
       </div>
-     
     </>
   );
 }

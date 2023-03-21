@@ -18,12 +18,14 @@ const ItemDetail = ({ producto }) => {
         <img src={producto.img} alt={producto.name} />
         <div className="detail">
           <h2>{producto.name}</h2>
-          <p> <u>Descripcion:</u> {producto.descripcion}</p>
+          <p>
+            {" "}
+            <u>Descripcion:</u> {producto.descripcion}
+          </p>
           <p>Medida: {producto.medida}</p>
           <p>Unidades: {producto.unidades}</p>
           <p>Precio: $ {producto.precio}</p>
         </div>
-        
       </div>
       {BotonPresionado ? (
         <Link to="/Cart">

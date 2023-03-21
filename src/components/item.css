@@ -5,28 +5,51 @@
     margin: auto 50px;
   }
   
-  .card {
+.card {
     color: rgb(7, 7, 117);
     text-align: center;
-    width: 200px;
+    width: 250px;
     margin: 10px 60px;
     border: 3px solid #7e2b2b;
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
   }
 
-  .card p {
-    font-size: 18px; 
+.card p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px; 
     font-weight: 700;
   }
+
+.tituloCard{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 34px;
+  border-bottom: 3px solid #7e2b2b; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
   
-  .card img {
-    width: 100%;
+}
+  
+.card img {
+    width: 90%;
     height: 200px;
     border-radius: 5px 5px 0 0;
   }
 
-  .botonDetalle{
-    color: rgb(7, 7, 117);
-    margin: 5px 0;
+.botonDetalle{
+    height: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid  rgb(7, 7, 117);
+    background-color: rgb(233, 224, 224);
+    color:rgb(167, 31, 31);
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
