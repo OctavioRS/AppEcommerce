@@ -28,9 +28,15 @@ const ItemDetail = ({ producto }) => {
         </div>
       </div>
       {BotonPresionado ? (
+        <> 
+        <Link to="/">
+          <button className="ir-al-carrito" > Seguir comprando</button>
+        </Link>
         <Link to="/Cart">
           <button className="ir-al-carrito"> Ir al carrito </button>
         </Link>
+       
+        </>
       ) : (
         <ItemCount onAdd={onAdd} stock={producto.unidades} />
       )}

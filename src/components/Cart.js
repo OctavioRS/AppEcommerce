@@ -13,6 +13,7 @@ import {
 import Form from "./Form";
 import Brief from "./Brief";
 
+
 const Cart = () => {
   const { cart, removeItem, TotalPrice } = useContext(CartContext);
   const [sellId, setSellId] = useState("");
@@ -50,9 +51,16 @@ const Cart = () => {
   };
 
   const handleFinalizarCompra = () => {
-    handleSubmit();
-    setShowBrief(true);
+    if (userData) {
+      handleSubmit();
+      setShowBrief(true);
+    } else {
+      alert("Por favor complete el formulario antes de finalizar la compra.");
+    }
   };
+  
+    
+  
 
   return (
     <>
