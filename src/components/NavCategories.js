@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./Nav.css"
 
 const NavCategories = () => {
   const categories = [
@@ -11,7 +12,7 @@ const NavCategories = () => {
     <>
       <div>
         {categories.map((categories) => (
-          <NavLink key={categories.id} to={categories.route}>
+          <NavLink key={categories.id} to={categories.route} activeClassName="active">
             {categories.name}
           </NavLink>
         ))}

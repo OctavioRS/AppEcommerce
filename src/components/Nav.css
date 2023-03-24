@@ -30,6 +30,11 @@ a{
     margin: 20px;
 }
 
+.active{
+    font-size: 20px;
+   color: rgb(183, 192, 199);
+}
+
 #numeroCarrito{
     color: rgb(233, 238, 241);
     background-color:  rgb(167, 31, 31);
