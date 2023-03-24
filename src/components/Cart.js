@@ -15,7 +15,7 @@ import Brief from "./Brief";
 
 
 const Cart = () => {
-  const { cart, removeItem, TotalPrice } = useContext(CartContext);
+  const { cart, removeItem, TotalPrice, clear } = useContext(CartContext);
   const [sellId, setSellId] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [showBrief, setShowBrief] = useState(false);
@@ -59,8 +59,7 @@ const Cart = () => {
     }
   };
   
-    
-  
+ 
 
   return (
     <>
@@ -91,6 +90,7 @@ const Cart = () => {
                   );
                 })}
                 <p> Precio total: ${TotalPrice()} </p>
+                <button onClick={clear} className="limpiar-carrito"> Limpiar carrito </button>
               </div>
               <Form onConfirm={handleConfirm} />
               <button

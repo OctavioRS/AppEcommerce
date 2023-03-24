@@ -158,3 +158,18 @@
   justify-content: center;
   align-items: center;
 }
+
+.limpiar-carrito{
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid  rgb(7, 7, 117);
+  background-color: rgb(233, 224, 224);
+  color:rgb(167, 31, 31);
+  font-family: 'Righteous';
+  cursor: pointer;
+  padding: 5px;
+  margin: 10px auto;
+}
