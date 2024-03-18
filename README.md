@@ -27,7 +27,7 @@ Este proyecto es un e-commerce de una ferretería ficticia llamada "La Tuerca", 
 #### Uso
 - Visita la página principal para visualizar la lista de productos disponibles.
 - Haz clic en el botón "Ver detalle" en un producto para ver información explayada del mismo.
-- Elige la cantidad de productos que deseas agreagr al corrito con los botones de aumentar o disminuir unidades y presiona "Ir al carrito".
+- Elige la cantidad de productos que deseas agregar al carrito con los botones de aumentar o disminuir unidades y presiona "Ir al carrito".
 - Visita la página de carrito de compras para visualizar los productos seleccionados. También podras eliminar productos si lo deseas.
 - Ingresa tus datos en el formulario para continuar al último paso de la compra.
 - Para finalizar presiona "Finalizar compra".
